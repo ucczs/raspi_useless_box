@@ -1,4 +1,4 @@
-USELESS BOX sketch for Arduino Nano
+*USELESS BOX* sketch for Arduino Nano
 
 Pin connection of arduino nano:
 - VIN: 9V Source
