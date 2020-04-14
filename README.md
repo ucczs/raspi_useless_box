@@ -1,4 +1,12 @@
-*USELESS BOX* sketch for Arduino Nano
+**USELESS BOX** sketch for Arduino Nano
+
+Necessary equipement:
+- Arduino Nano
+- Switch
+- Servo (Modelcraft RS-2 used in this example)
+- Wooden box
+- 9 V block battery
+- Wires
 
 Pin connection of arduino nano:
 - VIN: 9V Source
