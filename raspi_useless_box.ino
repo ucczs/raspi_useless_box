@@ -19,65 +19,70 @@ const int DELAY_LONG = 1500;
 const int POS_CLOSED = 8;
 const int POS_SWITCH = 100;
 
+const int SPEED_MAX = 70;
+const int SPEED_MEDIUM = 50;
+const int SPEED_SLOW = 20;
+const int SPEED_SUPER_SLOW = 5;
+
 void setup() {
   servoblau.attach(servo);
   pinMode(schalter, INPUT);
 }
 
 void behaviour_1() {
-  servoblau.write(POS_CLOSED,40,WAIT_TO_FINISH);    
+  servoblau.write(POS_CLOSED,   SPEED_MEDIUM,       WAIT_TO_FINISH);    
   delay(DELAY);
-  servoblau.write(POS_SWITCH,40,WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_MEDIUM,       WAIT_TO_FINISH);
   delay(DELAY);  
-  servoblau.write(POS_CLOSED,40,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MEDIUM,       WAIT_TO_FINISH);
 }
 
 void behaviour_2() {
-  servoblau.write(POS_CLOSED,40,WAIT_TO_FINISH);    
-  delay(DELAY);
-  servoblau.write(30,10,true);
+  servoblau.write(POS_CLOSED,   SPEED_MEDIUM,       WAIT_TO_FINISH);    
+  delay(DELAY); 
+  servoblau.write(30,           SPEED_SUPER_SLOW,   WAIT_TO_FINISH);
   delay(DELAY_SHORT);  
-  servoblau.write(POS_SWITCH,70,WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_MAX,          WAIT_TO_FINISH);
   delay(DELAY);
-  servoblau.write(POS_CLOSED,70,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,          WAIT_TO_FINISH);
 }
 
 void behaviour_3() {
-  servoblau.write(POS_CLOSED,40,WAIT_TO_FINISH);    
+  servoblau.write(POS_CLOSED,   SPEED_MEDIUM,      WAIT_TO_FINISH);    
   delay(DELAY);
-  servoblau.write(85,50,WAIT_TO_FINISH);
+  servoblau.write(75,           SPEED_MEDIUM,       WAIT_TO_FINISH);
   delay(DELAY_LONG);  
-  servoblau.write(60,20,WAIT_TO_FINISH);
+  servoblau.write(60,           SPEED_SLOW,         WAIT_TO_FINISH);
   delay(DELAY_LONG);  
-  servoblau.write(POS_SWITCH,20,WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_SLOW,         WAIT_TO_FINISH);
   delay(DELAY_SHORT);  
-  servoblau.write(POS_CLOSED,20,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_SLOW,         WAIT_TO_FINISH);
 }
 
 void behaviour_4() {
-  servoblau.write(POS_CLOSED,40,WAIT_TO_FINISH);    
+  servoblau.write(POS_CLOSED,   SPEED_MEDIUM,       WAIT_TO_FINISH);    
   delay(DELAY);
-  servoblau.write(70,5,WAIT_TO_FINISH);
+  servoblau.write(70,           SPEED_SUPER_SLOW,   WAIT_TO_FINISH);
   delay(DELAY_LONG);  
-  servoblau.write(POS_SWITCH,100,WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_MAX,          WAIT_TO_FINISH);
   delay(DELAY_SHORT);
-  servoblau.write(POS_CLOSED,100,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,          WAIT_TO_FINISH);
 }
 
 void behaviour_5() {
-  servoblau.write(POS_CLOSED,70,WAIT_TO_FINISH);
-  servoblau.write(POS_SWITCH,150,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,          WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_MAX,          WAIT_TO_FINISH);
   delay(DELAY);  
-  servoblau.write(POS_CLOSED,150,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,          WAIT_TO_FINISH);
 }
 
 void behaviour_6() {
   delay(DELAY_LONG);
   delay(DELAY_LONG);
-  servoblau.write(POS_CLOSED,70,WAIT_TO_FINISH);
-  servoblau.write(POS_SWITCH,150,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,  WAIT_TO_FINISH);
+  servoblau.write(POS_SWITCH,   SPEED_MAX,  WAIT_TO_FINISH);
   delay(DELAY);  
-  servoblau.write(POS_CLOSED,150,WAIT_TO_FINISH);
+  servoblau.write(POS_CLOSED,   SPEED_MAX,  WAIT_TO_FINISH);
 }
 
 
