@@ -1,3 +1,7 @@
+## Useless box
+
+![Useless box](/DOC/useless_box_1.jpg?raw=true =250x)
+
 **USELESS BOX** sketch for Arduino Nano
 
 Necessary equipement:
