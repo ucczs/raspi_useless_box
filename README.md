@@ -1,6 +1,6 @@
 ## Useless box
 
-![Useless box](/DOC/useless_box_1.jpg =250x)
+<img src="/DOC/useless_box_1.jpg" alt="drawing" width="200"/>
 
 **USELESS BOX** sketch for Arduino Nano
 
