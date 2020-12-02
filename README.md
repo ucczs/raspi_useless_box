@@ -1,6 +1,6 @@
 ## Useless box
 
-<img src="/DOC/useless_box_1.jpg" alt="drawing" width="200"/>
+<img src="/DOC/useless_box_1.jpg" alt="drawing" width="600"/>
 
 **USELESS BOX** sketch for Arduino Nano
 
